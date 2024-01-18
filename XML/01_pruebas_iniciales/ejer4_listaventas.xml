@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE listaventas [
+    <!ELEMENT listaventas (venta+)>
+    <!ELEMENT venta (importe, comprador,vendedor,fecha?,codigo-factura)>
+    <!ELEMENT importe (#PCDATA)>
+    <!ELEMENT comprador (empresa | persona )>
+    <!ELEMENT vendedor (empresa | persona )>
+    <!ELEMENT empresa (cif,nombre)>
+    <!ELEMENT persona (nif,nombre)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT codigo-factura (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT nif (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+]>
+
+<listaventas>
+    <venta>
+        <importe> 1000 </importe>
+        <comprador>
+            <persona>
+                <nif>12345678X</nif>
+                <nombre>Dario Perez Lopez</nombre>
+            </persona>
+        </comprador>
+        <vendedor>
+            <empresa>
+                <cif>B11111111</cif>
+                <nombre>MiNegocio SL</nombre>
+            </empresa>
+        </vendedor>
+        <fecha>21/12/2023</fecha>
+        <codigo-factura>f00015</codigo-factura>
+    </venta>    
+</listaventas>        
