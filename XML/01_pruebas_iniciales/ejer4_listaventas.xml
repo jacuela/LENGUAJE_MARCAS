@@ -4,7 +4,8 @@
     <!ELEMENT venta (importe, comprador,vendedor,fecha?,codigo-factura)>
     <!ELEMENT importe (#PCDATA)>
     <!ELEMENT comprador (empresa | persona )>
-    <!ELEMENT vendedor (empresa | persona )>
+    <!ELEMENT vendedor ((cif | nif ), nombre)>
+    
     <!ELEMENT empresa (cif,nombre)>
     <!ELEMENT persona (nif,nombre)>
     <!ELEMENT fecha (#PCDATA)>
@@ -24,10 +25,8 @@
             </persona>
         </comprador>
         <vendedor>
-            <empresa>
                 <cif>B11111111</cif>
                 <nombre>MiNegocio SL</nombre>
-            </empresa>
         </vendedor>
         <fecha>21/12/2023</fecha>
         <codigo-factura>f00015</codigo-factura>
