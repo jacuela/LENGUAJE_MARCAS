@@ -6,6 +6,9 @@
   <!ELEMENT concepto (#PCDATA)>
 ]>
 
+
+
+
 <contabilidad>
   <apunte>
     <ingreso />
