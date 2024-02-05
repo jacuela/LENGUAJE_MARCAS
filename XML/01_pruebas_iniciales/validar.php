@@ -2,13 +2,16 @@
 
 libxml_use_internal_errors(true); // NO LIBXML WARNINGS
 
+$file = 'listaclientes.xml';
+//$file = 'escritores.xml';
+
+
 $xmlDocument = new DOMDocument();
-$xmlDocument->load('listaclientes.xml');
+$xmlDocument->load($file);
 
 if ($xmlDocument->validate()) {
-    echo "¡Este documento es válido!\n";
+    echo "¡Este documento $file es válido!\n";
 } else {
 
-    echo "ERROR en la validacion!\n";
+    echo "ERROR en la validacion! de $file\n";
 }
-
