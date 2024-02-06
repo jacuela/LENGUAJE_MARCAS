@@ -2,9 +2,15 @@
 
 $xml = simplexml_load_file('listaclientes.xml');
 
-//Listado de clientes
+//Listado de clientes en el XML: listaclientes.xml
 print("<h3>Listado de clientes</h3>");
 $clientes = $xml->xpath("//cliente");
+
+print("<pre>");
+print_r($clientes);
+print("</pre>");
+
+
 foreach ($clientes as $cliente) {
     print("Nombre:" . $cliente->nombre . "<br>");
     print("CIF:" . $cliente->cif . "<br>");
@@ -17,7 +23,7 @@ foreach ($clientes as $cliente) {
     echo "<hr>";
 }
 
-//Listado de clientes
+//Listado de nombre de clientes en el XML: listaclientes.xml
 print("<h3>Listado de nombres de cliente</h3>");
 $resul = $xml->xpath("//nombre");
 
@@ -30,3 +36,4 @@ foreach ($resul as $nombre) {
     print("<li>" . $nombre . "</li>");
 }
 print "</ol>";
+
