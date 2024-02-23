@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cine>
+    <directores>
+        <director nombre="Christopher Nolan" codigo="CN" fecha_nacimiento="1970" />
+        <director nombre="Martin Scorsese" codigo="MS" fecha_nacimiento="1942" />
+        <director nombre="Ridley Scott" codigo="RS" />
+    </directores>
+    <peliculas>
+        <pelicula titulo="Uno de los nuestros" director="MS">
+            <estreno>1990</estreno>
+            <titulo>Goodfellas</titulo>
+
+        </pelicula>
+        <pelicula titulo="Thelma y Louise" director="RS">
+            <estreno>1991</estreno>
+            <titulo>Thelma and Louise</titulo>
+
+        </pelicula>
+        <pelicula titulo="El truco final" director="CN">
+            <estreno>2006</estreno>
+            <titulo>The Prestige</titulo>
+
+        </pelicula>
+    </peliculas>
+</cine>
