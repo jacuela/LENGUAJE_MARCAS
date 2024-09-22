@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Usando el anterior esquema, representa una biblioteca musical -->
+
+<biblioteca_musica>
+    <album>
+        <titulo>El Madrileño</titulo>
+        <autor>C.Tangana</autor>
+        <año>2021</año>
+        <duracion>42:31</duracion>
+        <generos>
+            <genero>Pop</genero>
+            <genero>Folk</genero>
+        </generos>
+        <canciones>
+            <cancion>Demasiadas Mujeres</cancion>
+            <cancion>Tu me dejaste querer</cancion>
+            <cancion>Comerte Entera</cancion>
+            <cancion>Nunca estoy</cancion>
+            <cancion>...</cancion>
+        </canciones>
+     </album>
+     <album>
+        <titulo>Master of Puppets</titulo>
+        <autor>Metallica</autor>
+        <año>1986</año>
+        <duracion>25:00</duracion>
+        <generos>
+            <genero>Metal</genero>
+        </generos>
+        <canciones>
+            <cancion>Battery</cancion>
+            <cancion>Master of Puppets</cancion>
+            <cancion>The Thing That Should Not Be</cancion>
+            <cancion>...</cancion>
+        </canciones>
+     </album>
+</biblioteca_musica>

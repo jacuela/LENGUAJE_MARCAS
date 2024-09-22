@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML para representar un album musical El Madrileño, de C.Tangana -->
+ <album>
+    <titulo>El Madrileño</titulo>
+    <autor>C.Tangana</autor>
+    <año>2021</año>
+    <duracion>42:31</duracion>
+    <generos>
+        <genero>Pop</genero>
+        <genero>Folk</genero>
+    </generos>
+    <canciones>
+        <cancion>Demasiadas Mujeres</cancion>
+        <cancion>Tu me dejaste querer</cancion>
+        <cancion>Comerte Entera</cancion>
+        <cancion>Nunca estoy</cancion>
+        <cancion>...</cancion>
+    </canciones>
+ </album>
