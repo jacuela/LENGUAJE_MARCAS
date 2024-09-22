@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- LISTADO DE PERSONAL AUTORIZADO -->
+<personal>
+  <persona id="01">
+    <nombre>&quot; Directora &quot; Nerea &#128561; </nombre>
+    <apellido>Urbieta</apellido>
+    <direccion>Gran Via 5, Bilbo</direccion>
+    <matricula>0 &#8364;</matricula>
+  </persona>
+  <persona id="100">
+    <nombre>Idoia</nombre>
+    <apellido>Elorza</apellido>
+    <direccion>Getaria Kalea, Donostia</direccion>
+    <matricula>800 &#8364;</matricula>
+  </persona>
+  <persona id="101">
+    <nombre>Nagore</nombre>
+    <apellido>Dorronsoro</apellido>
+    <direccion>Dato Kalea 6, Gasteiz</direccion>
+    <matricula>800 &#8364;</matricula>
+  </persona>
+  <persona id="102">
+    <nombre>Eli</nombre>
+    <apellido>Agirre</apellido>
+    <direccion>Dato Kalea 8, Gasteiz</direccion>
+    <matricula>800 &#8364;</matricula>
+  </persona>
+</personal>
