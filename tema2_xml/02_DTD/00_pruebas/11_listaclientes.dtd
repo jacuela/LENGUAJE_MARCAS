@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT listaclientes (cliente+)>
+<!ELEMENT cliente (nombre, cif, diasentrega?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT diasentrega (#PCDATA)>

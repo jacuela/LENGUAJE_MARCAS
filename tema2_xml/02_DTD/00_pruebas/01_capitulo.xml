@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE capitulo
+  [<!ELEMENT capitulo (titulo, apartado+)>
+   <!ELEMENT titulo (#PCDATA)>
+   <!ELEMENT apartado (#PCDATA)>
+  ]>
+<capitulo>
+  <titulo>Introducción</titulo>
+  <apartado>Primeros pasos con DTDs.</apartado>
+  <apartado>Segundos pasos con DTDs.</apartado>
+  <apartado>Pasos finales con DTDs.</apartado>  
+</capitulo>

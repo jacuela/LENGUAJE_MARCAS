@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaclientes SYSTEM "listaclientes.dtd" >
+<listaclientes>
+        <cliente>
+                <nombre>Mercasas</nombre>
+                <cif>5676443</cif>
+        </cliente>
+        <cliente>
+        	<nombre>Acer SL</nombre>
+                <cif>5121554</cif>
+                <diasentrega>30</diasentrega>
+        </cliente>
+</listaclientes>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<persona>
+    <mensaje>si salario &apos;1000 entonces&#8364; </mensaje>
+    <nombre atri="Diego alias &quot;Zamora&quot; el mejor"></nombre>
+</persona>
+
+<canciones>
+    <cancion>
+        <titulo>Demasiadas Mujeres</titulo>
+        <duracion>7:00</duracion>
+    </cancion>    
+    <cancion>Tu me dejaste querer</cancion>
+    <duracion>7:00</duracion>
+    <cancion>Comerte Entera</cancion>
+    <duracion>7:00</duracion>
+    
+</canciones>
+</root>

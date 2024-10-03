@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT banco (sucursales)+ >
+<!ELEMENT sucursales (prestamo | cuenta)* >
+<!ELEMENT prestamo (importe, titular) >
+<!ELEMENT cuenta (saldo, titulares, apertura) >
+<!ELEMENT titulares (titular)+ >
+<!ELEMENT titular (nombre, direccion, nacimiento) >
+<!ELEMENT importe (#PCDATA) >
+<!ELEMENT saldo (#PCDATA) >
+<!ELEMENT apertura (#PCDATA) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT direccion (#PCDATA) >
+<!ELEMENT nacimiento (#PCDATA) >
+<!ATTLIST sucursales codigo ID #REQUIRED >
+<!ATTLIST  prestamo codigo ID #REQUIRED >
+<!ATTLIST cuenta codigo ID #REQUIRED >
+<!ATTLIST titular codigo ID #REQUIRED >

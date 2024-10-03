@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE libro [
+    <!ELEMENT libro (titulo, autor,capitulo+)>
+    <!ELEMENT capitulo (titulo, apartado+)>
+    <!ELEMENT titulo (#PCDATA) >
+    <!ELEMENT autor (#PCDATA) >
+    <!ELEMENT apartado (#PCDATA)>
+]>
+<libro>
+    <titulo>El Señor de los anillos</titulo>
+    <autor>J.R.Tolkien</autor>
+    <capitulo>
+        <titulo>Introducción</titulo>
+        <apartado>Historia</apartado>
+    </capitulo>
+    <capitulo>
+        <titulo>Capitulo1</titulo>
+        <apartado>Elementos del DTD</apartado>
+        <apartado>Usos del DTD</apartado>  
+    </capitulo>
+</libro>

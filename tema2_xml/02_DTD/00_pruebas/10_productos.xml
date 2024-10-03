@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE productos [
+	<!ELEMENT productos   (raton|teclado)* >
+	<!ELEMENT raton       (codigo, descripcion?) >
+	<!ELEMENT codigo      (#PCDATA)>
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT teclado     (codigo,descripcion,peso?)>
+	<!ELEMENT peso        (#PCDATA)>
+]>
+<productos>
+    <raton>
+        <codigo>R1</codigo>
+    </raton>
+    <teclado>
+        <codigo>T1</codigo>
+        <descripcion>Teclado inalamb.</descripcion>
+        <peso>12</peso>
+    </teclado>
+</productos>

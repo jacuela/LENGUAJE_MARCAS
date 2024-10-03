@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE banco [
+    <!ELEMENT banco (sucursales)+ >
+    <!ELEMENT sucursales (prestamo | cuenta)* >
+    <!ELEMENT prestamo (importe, titular) >
+    <!ELEMENT cuenta (saldo, titulares, apertura) >
+    <!ELEMENT titulares (titular)+ >
+    <!ELEMENT titular (nombre, direccion, nacimiento) >
+    <!ELEMENT importe (#PCDATA) >
+    <!ELEMENT saldo (#PCDATA) >
+    <!ELEMENT apertura (#PCDATA) >
+    <!ELEMENT nombre (#PCDATA) >
+    <!ELEMENT direccion (#PCDATA) >
+    <!ELEMENT nacimiento (#PCDATA) >
+    <!ATTLIST sucursales codigo ID #REQUIRED >
+    <!ATTLIST  prestamo codigo ID #REQUIRED >
+    <!ATTLIST cuenta codigo ID #REQUIRED >
+    <!ATTLIST titular codigo ID #REQUIRED >
+]>
+<banco>
+    <sucursales codigo="s1">
+        <prestamo codigo="p1">
+            <importe>110000 €</importe>
+            <titular codigo="t2">
+                <nombre>Pepe</nombre>
+                <direccion> dfs rt </direccion>
+                <nacimiento>23-09-1900</nacimiento>
+            </titular>            
+        </prestamo>
+        <cuenta codigo="c1">
+            <saldo>100000 €</saldo>
+            <titulares>
+                <titular codigo="t1">
+                    <nombre>
+                    Pepe</nombre>
+                    <direccion>c/ lapera</direccion>
+                    <nacimiento>23-09-1900</nacimiento>
+                </titular>
+            </titulares>
+            <apertura>23/02/2003</apertura>
+        </cuenta>
+    </sucursales>
+          
+</banco>
