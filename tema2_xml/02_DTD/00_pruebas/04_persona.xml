@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Crear un DTD para definir una persona. Los campos son los siguientes,
+el el mismo orden que los indico.
+- Una persona tiene un nombre, appellido1 y apellido2. 
+- Tiene un sexo que puede ser de 3 tipos: o hombre o mujer o nobinario.
+- Tiene una edad
+- Tiene una lista de emails (<emails>) formada por uno o varios emails (<email>)
+-->
+
+<!-- 
+Introduce una vez creado el DTD, la persona siguiente:
+Alberto Perez Cano, de sexo "hombre", 45 años, con dos emails: "albertito@gmail.com"
+y "alberto.perez@gmail.com"
+
+-->
+
+<!DOCTYPE persona [
+        
+]>
+
+<persona>
+</personas>
