@@ -16,8 +16,30 @@ y "alberto.perez@gmail.com"
 -->
 
 <!DOCTYPE persona [
-        
+    <!ELEMENT persona (nombre,apellido1,apellido2,sexo,edad,emails)>
+    <!ELEMENT sexo (hombre | mujer | nobinario)>
+    <!ELEMENT hombre EMPTY>
+    <!ELEMENT mujer EMPTY>
+    <!ELEMENT nobinario EMPTY>
+    <!ELEMENT emails (email)+>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    
 ]>
-
 <persona>
-</personas>
+    <nombre>Alberto</nombre>
+    <apellido1>Perez</apellido1>
+    <apellido2>Cano</apellido2>
+    <sexo>
+        <hombre></hombre>
+    </sexo>
+    <edad>45</edad>
+    <emails>
+        <email>albertito@gmail.com</email>
+        <email>alberto.perez@gmail.com</email>
+    </emails>
+    
+</persona>
