@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usuarios [
+  <!ELEMENT usuarios (usuario)*>
+  <!ELEMENT usuario (nombre, apodo?)>
+    <!ATTLIST usuario dni NMTOKEN #REQUIRED>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apodo (#PCDATA)>
+    
+]>
+<!-- Otra forma de representar la información, usando menos atributos -->
+<usuarios>
+  <usuario dni="12345678A">
+     <nombre>Ana</nombre>
+  </usuario>
+  <usuario dni="2222222B">
+     <nombre>Iker</nombre>
+     <apodo>el santo</apodo>
+  </usuario>
+  <usuario dni="333A">
+     <nombre>Elsa</nombre>
+     <apodo>La de Frozen</apodo>
+  </usuario>
+</usuarios>

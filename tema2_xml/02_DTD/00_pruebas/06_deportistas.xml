@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+   <!ELEMENT deportistas (tenis | f1 )*>
+   <!ELEMENT futbol (#PCDATA)>
+   <!ELEMENT tenis (#PCDATA)>
+      <!ATTLIST tenis fecha_de_nacimiento CDATA #IMPLIED>
+      <!ATTLIST tenis pais CDATA #REQUIRED>
+   
+   <!ELEMENT f1 (#PCDATA)>
+      <!-- puedo declarar varios atributos de un mismo elemento -->   
+      <!ATTLIST f1
+       fecha_de_nacimiento CDATA #IMPLIED
+       equipo CDATA #REQUIRED
+       pais CDATA #REQUIRED
+      >
+   
+]>
+<deportistas>
+   <f1 pais="Alemania" fecha_de_nacimiento="03/07/1987" equipo="Ferrari">Sebastian Vettel</f1>
+   <f1 pais="España" equipo="McLaren">Fernando Alonso</f1>
+   <tenis pais="España">Rafael Nadal</tenis>
+</deportistas>

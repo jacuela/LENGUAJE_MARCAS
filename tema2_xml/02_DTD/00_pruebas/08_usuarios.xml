@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usuarios [
+  <!ELEMENT usuarios (usuario)*>
+  <!ELEMENT usuario (#PCDATA)>
+  <!ATTLIST usuario dni NMTOKEN #REQUIRED>
+  <!ATTLIST usuario apodo CDATA #IMPLIED>   <!-- cambiar por NMTOKEN para ver implicaciones -->
+  
+]>
+<!-- NMTOKEN, a diferencia de CDATA no permite espacios en blanco, ni caracteres especiales como $,@, etc. Tiene que
+ tener el formato de una etiqueta XML -->
+<usuarios>
+  <usuario dni="12345678A">Ana</usuario>
+  <usuario dni="2222222B" apodo="el chungo">Iker</usuario>
+  <usuario dni="333A" apodo="la de frozen">Elsa</usuario>
+</usuarios>

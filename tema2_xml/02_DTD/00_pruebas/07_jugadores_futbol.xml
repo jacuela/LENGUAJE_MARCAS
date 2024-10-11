@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+    <!ELEMENT futbol ((jugador|equipo|entrenador)*)>
+    <!ELEMENT jugador (#PCDATA)>
+        <!ATTLIST jugador codigo ID #REQUIRED> 
+        <!-- ID no puede tener espacios, y debe empezar por letra o _ -->
+    <!ELEMENT entrenador (#PCDATA)>
+        <!ATTLIST entrenador codigo ID #REQUIRED>    
+    <!ELEMENT equipo EMPTY>
+        <!ATTLIST equipo nombre CDATA #REQUIRED>
+        <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+        <!ATTLIST equipo entrenador IDREF #REQUIRED>
+        
+]>
+<futbol>
+    <jugador codigo="ads">Alfredo Di Stéfano</jugador>
+    <jugador codigo="cr7" >Cristiano Ronaldo</jugador>
+    <jugador codigo="dam" >Diego Armando Maradona</jugador>
+    <jugador codigo="jc" >Johan Cruyff</jugador>
+    <entrenador codigo="carleto" >Carlos Anceloti</entrenador>
+    <entrenador codigo="xh" >Xavi Hernandez</entrenador>
+    <equipo nombre="Real Madrid" jugadores="cr7" entrenador="carleto"/>
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" entrenador="xh"/>
+</futbol>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE listapedidos[
+        <!ELEMENT listapedidos (pedido)+>
+        <!ELEMENT pedido (contenido)>
+        <!ELEMENT contenido (#PCDATA)>
+        <!ATTLIST pedido codigo CDATA #REQUIRED>
+        <!ATTLIST pedido emisor CDATA #IMPLIED>
+        <!ATTLIST pedido urgente (si | no) #REQUIRED >
+        
+        
+]>
+<listapedidos>
+    <pedido codigo="20C" urgente="no">
+        <contenido>Pedido de cosas</contenido>
+    </pedido>
+    <pedido codigo="10A" emisor="escotex" urgente="si">
+        <contenido>Papel higiénico</contenido>
+    </pedido>
+</listapedidos>
