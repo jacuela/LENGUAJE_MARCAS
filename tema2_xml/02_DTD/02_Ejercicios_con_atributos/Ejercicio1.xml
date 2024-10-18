@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (ejemplar*)>
+
+    <!ELEMENT ejemplar (titulo, editorial, autor+, prestamos)>
+        <!ATTLIST ejemplar isbn NMTOKEN #IMPLIED>
+        <!ATTLIST ejemplar tipo (libro | revista ) #REQUIRED>
+        <!ATTLIST ejemplar edicion CDATA #IMPLIED>
+        <!ATTLIST ejemplar paginas CDATA #REQUIRED>
+        <!ATTLIST ejemplar fecha CDATA #REQUIRED>
+
+    <!ELEMENT titulo (#PCDATA)>    
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+        <!ATTLIST autor funcion CDATA #IMPLIED>
+    <!ELEMENT prestamos (lector)*>
+
+    <!ELEMENT lector (#PCDATA)>
+        <!ATTLIST lector socio CDATA #REQUIRED>
+        <!ATTLIST lector inicio CDATA #REQUIRED>
+        <!ATTLIST lector devolucion CDATA #REQUIRED>
+
+]>
+
+<biblioteca>
+    <ejemplar tipo="libro" isbn="978-2-7460-4958-1" edicion="1" paginas="347" fecha="01/04/2011">
+        <titulo>XML Practico</titulo>
+        <editorial>Ediciones ENI</editorial>
+        <autor>Sebasten Lecome</autor>
+        <autor>Thierry</autor>
+        <prestamos>
+            <lector socio="0223" inicio="13/05/2014" devolucion="15/05/2014">Pedro Lopez</lector>
+            <lector socio="0065" inicio="13/07/2015" devolucion="15/07/2015">Ali Mendez</lector>
+        </prestamos>
+    </ejemplar>
+    <ejemplar tipo="revista" paginas="51" fecha="01/11/2009">
+        <titulo>Todo Linux</titulo>
+        <editorial>Studio Press</editorial>
+        <autor>Teresa Lopez</autor>
+        <autor>Andres Lozano</autor>
+        <prestamos>
+            <lector socio="0211" inicio="11/05/2015" devolucion="15/05/2015">Victor Rodri</lector>
+        </prestamos>
+    </ejemplar>
+</biblioteca>

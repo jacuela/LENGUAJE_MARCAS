@@ -19,6 +19,6 @@
     <jugador codigo="jc" >Johan Cruyff</jugador>
     <entrenador codigo="carleto" >Carlos Anceloti</entrenador>
     <entrenador codigo="xh" >Xavi Hernandez</entrenador>
-    <equipo nombre="Real Madrid" jugadores="cr7" entrenador="carleto"/>
+    <equipo nombre="Real Madrid" jugadores="cr7" entrenador="carleto"></equipo>
     <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" entrenador="xh"/>
 </futbol>

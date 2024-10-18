@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gestion_coches [
+    <!ELEMENT gestion_coches (coches,garaje*)>
+    <!ELEMENT coches (coche)*>
+    <!ELEMENT coche (modelo)>
+    <!ATTLIST coche matricula ID #REQUIRED>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT garaje EMPTY>
+    <!ATTLIST garaje numero ID #REQUIRED>
+    <!ATTLIST garaje coches IDREFS #REQUIRED>
+    
+        
+]>
+<gestion_coches>
+    <coches>
+        <coche matricula="_1111A">
+            <modelo>BMW serie5</modelo>
+        </coche>
+        <coche matricula="_2222A">
+            <modelo>Volvo XC60</modelo>
+        </coche>
+        <coche matricula="_3333A">
+            <modelo>Ferrari 488</modelo>
+        </coche>
+        <coche matricula="_4444A">
+            <modelo>Mercedes S500</modelo>
+        </coche>
+    </coches>
+    <garaje numero="G1" coches="_1111A _4444A"/>
+    <garaje numero="G2" coches="_2222A"/>
+</gestion_coches>

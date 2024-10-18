@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE libros_texto [
+    <!ELEMENT libros_texto (libro_texto*)>
+    <!ELEMENT libro_texto (editorial,titulo,hojas?)>
+        <!ATTLIST libro_texto isbn ID #REQUIRED>
+        <!ATTLIST libro_texto encuadernacion (pasta_dura | pasta_blanda | digital) #REQUIRED>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT hojas (#PCDATA)>        
+]>
+
+<libros_texto>
+    <libro_texto isbn="AX-12-12-12" encuadernacion="pasta_dura">
+        <editorial>Anaya</editorial>
+        <titulo>El cuerpo humano</titulo>
+        <hojas>56</hojas>   
+    </libro_texto>
+    <libro_texto isbn="AX-12-12-15" encuadernacion="digital">
+        <editorial>Planeta</editorial>
+        <titulo>Sistemas Informaticos</titulo>     
+    </libro_texto>
+</libros_texto>
