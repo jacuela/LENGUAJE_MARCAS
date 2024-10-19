@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="producto">
+    <xs:complexType>
+        <xs:choice>
+            <xs:element name="teclado" type="xs:string" />
+            <xs:element name="raton" type="xs:string" />
+            <xs:element name="monitor" type="xs:string" />
+        </xs:choice>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

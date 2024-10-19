@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="01_Note.xsd">
+
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+  <fecha>2024-10-21</fecha>
+
+</note>

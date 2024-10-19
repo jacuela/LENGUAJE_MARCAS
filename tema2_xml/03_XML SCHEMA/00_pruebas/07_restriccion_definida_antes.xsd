@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- defino restriccion de tipo_sexo-->
+ <!--
+<xs:simpleType name="tipo_sexo">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="mujer"/>
+        <xs:enumeration value="hombre"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+<xs:element name="agenda">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="sexo" type="tipo_sexo"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+-->
+
+
+<!-- esto así no funciona pq no encuentra el tipo -->
+<xs:element name="agenda">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="sexo" type="tipo_sexo"/>
+        <xs:simpleType name="tipo_sexo">
+          <xs:restriction base="xs:string">
+          <xs:enumeration value="mujer"/>
+          <xs:enumeration value="hombre"/>
+          </xs:restriction>
+        </xs:simpleType>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

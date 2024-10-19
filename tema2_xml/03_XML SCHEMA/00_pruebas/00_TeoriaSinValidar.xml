@@ -1,0 +1,110 @@
+<!-- EJEMPLOS DE DECLARACIONES AISLADOS SIN VALIDAR -->
+
+<!-- ELEMENTOS ESTANDARES -->
+<xs:element name="nombre_del_atributo" 
+            type="tipo_de_dato" 
+            fixed="valor_fijo" 
+            default="valor_defecto" 
+            minOcurrrs="mínimas_apariciones" 
+            maxOccurs="máximas_apariciones"
+/>
+
+
+
+<ciudad>Roma</ciudad>
+<xs:element name="ciudad" type="xs:string"/>
+
+<fecha-de-nacimiento>1996-12-18</fecha-de-nacimiento>
+<xs:element name="fecha-de-nacimiento" type="xs:date"/>
+
+<hora>18:29:45</hora>
+<xs:element name="hora" type="xs:time"/>
+
+<nota>7.5</nota>
+<xs:element name="nota" type="xs:decimal"/>
+
+<apto>true</apto>
+<xs:element name="apto" type="xs:boolean"/>
+
+
+<!-- valor fijo y valor por defecto. Uno u otro -->
+<xs:element name="mes" type="xs:string" fixed="agosto"/> 
+<xs:element name="mes" type="xs:string" default="agosto"/>
+
+<!-- apariciones mínimas y máximas. Si no se pone
+     nada, por defecto es 1. Ilimitado es "unbounded" -->
+
+<xs:element name="pagina" minOcurrrs="0" maxOccurs="unbounded">
+
+
+<!-- ====================================================================-->
+<!-- ELEMENTOS COMPLEJOS -->
+<xs:element name="nombre_elemento">
+    <xs:complexType>
+    <xs:sequence> <!-- sequence (TODOS Y EN ESE ORDEN)/
+                        all (TODOS SIN ORDEN)/
+                        choice (SOLO UNO DE ELLOS) -->
+        ... subelementos ...
+    </xs:sequence>
+        ... atributos ...
+    </xs:complexType>
+</xs:element>
+
+o esta opción
+
+<!-- esta segunda estructura se supone que es más optima pq puedes reutilizat el tipo-->
+<xs:element name="nombre_elemento" type="nombre_del_tipo_complejo"/>
+<xs:complexType name="nombre_del_tipo_complejo">
+  <xs:sequence> 
+    ... subelementos ...
+  </xs:sequence>
+    ... atributos ...
+</xs:complexType>
+
+
+
+
+<!-- ====================================================================-->
+<!-- ATRIBUTOS -->
+<xs:attribute   name="nombre_del_atributo" 
+                type="tipo_de_dato" 
+                fixed="valor_fijo" 
+                default="valor_defecto"
+                use="required"
+/>
+
+
+<curso grupo="B">2</curso>
+<xs:element name="curso" type="xs:integer"/>
+<xs:attribute name="grupo" type="xs:string"/>
+<!-- OJO, esto no se pone así. Si un elemento tiene atributos, es COMPLEJO-->
+
+
+<!-- Para indicar que el atributo es obligatorio. 
+ Si no se indica nada, es opcional-->
+<xs:attribute name="grupo" type="xs:string" use="required"/>
+
+
+
+
+<!-- ====================================================================-->
+<!-- TIPO SIMPLE para definir restriccciones -->
+
+<xs:element name="nombre_elemento">
+  <xs:simpleType>
+    <xs:restriction>
+     ... restricciones ...
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+o esta opción. 
+Pero ojo, que la segunda opción te pide declarar el tipo antes
+
+<xs:element name="nombre_elemento" type="nombre_del_tipo_simple"/>
+
+<xs:simpleType name="nombre_del_tipo_simple">
+  <xs:restriction>
+    ... restricciones ...
+  </xs:restriction>
+</xs:simpleType> 

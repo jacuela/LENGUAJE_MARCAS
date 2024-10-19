@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="06_agenda.xsd">
+   <contacto>
+    <nombre>Pepa Perez</nombre>
+    <email>pepa@kk.com</email>
+    <sexo>mujer</sexo>
+    <codigo_postal>3007</codigo_postal>
+   </contacto>
+   <contacto>
+    <nombre>Alfonso Arus</nombre>
+    <email>alfonso.arus@kk.com</email>
+    <sexo>nobinario</sexo>
+    <codigo_postal>30160</codigo_postal>
+   </contacto>
+</agenda>
