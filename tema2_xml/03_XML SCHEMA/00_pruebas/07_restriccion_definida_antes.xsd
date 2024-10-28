@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <!-- defino restriccion de tipo_sexo-->
- <!--
+ 
 <xs:simpleType name="tipo_sexo">
     <xs:restriction base="xs:string">
         <xs:enumeration value="mujer"/>
@@ -19,7 +19,7 @@
 </xs:element>
 
 </xs:schema>
--->
+
 
 
 <!-- esto así no funciona pq no encuentra el tipo -->

@@ -1,8 +1,11 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- un producto puede ser o en raton, o un teclado, o un monitor 
+-->
 
 <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="03_producto.xsd">
 
-    <raton>Logitech</raton>
+    <teclado>Logitech</teclado>
     
 </producto>

@@ -1,17 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<!-- definiendo el tipo
-<xs:element name="libro" type="tipo_libro"/>
-
-<xs:complexType name="tipo_libro">
-  <xs:all>
-    <xs:element name="titulo" type="xs:string" />
-    <xs:element name="autor" type="xs:string" />
-    <xs:element name="editorial" type="xs:string" />
-  </xs:all>
-</xs:complexType>
--->
 <xs:element name="libro">
     <xs:complexType>
         <xs:all>
@@ -23,3 +12,16 @@
 </xs:element>
 
 </xs:schema>
+
+
+<!-- definiendo el tipo
+<xs:element name="libro" type="tipo_libro"/>
+
+<xs:complexType name="tipo_libro">
+  <xs:all>
+    <xs:element name="titulo" type="xs:string" />
+    <xs:element name="autor" type="xs:string" />
+    <xs:element name="editorial" type="xs:string" />
+  </xs:all>
+</xs:complexType>
+-->

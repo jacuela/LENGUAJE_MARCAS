@@ -5,7 +5,7 @@
             type="tipo_de_dato" 
             fixed="valor_fijo" 
             default="valor_defecto" 
-            minOcurrrs="mínimas_apariciones" 
+            minOccurs="mínimas_apariciones" 
             maxOccurs="máximas_apariciones"
 />
 

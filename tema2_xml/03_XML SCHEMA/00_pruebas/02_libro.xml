@@ -6,4 +6,5 @@ xsi:noNamespaceSchemaLocation="02_libro.xsd">
     <titulo>El señor de los anillos</titulo>
     <editorial>Tirant Lo Blanch</editorial>
     <autor>John Ronald Ruelen Tolkien</autor>
-  </libro>
+</libro>
+
