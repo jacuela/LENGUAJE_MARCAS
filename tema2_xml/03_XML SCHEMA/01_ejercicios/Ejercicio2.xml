@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio2.xsd">
+    <venta>
+        <ventaacredito>
+            <fechafinpago>2021-10-22</fechafinpago>
+            <cantidad>21000</cantidad>
+        </ventaacredito>
+    </venta>
+    <venta>
+        <ventainmediata>
+            <cantidad>1800</cantidad>
+            <divisa>euros</divisa>
+        </ventainmediata>
+    </venta>
+    <venta>
+        <ventaacredito>
+            <cantidad>21000</cantidad>
+        </ventaacredito>
+    </venta>
+</listaventas>

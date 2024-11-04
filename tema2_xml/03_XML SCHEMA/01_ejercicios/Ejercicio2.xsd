@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="listaventas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="venta" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="ventaacredito">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fechafinpago" minOccurs="0" type="xs:date"/>
+                                    <xs:element name="cantidad" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:double">
+                                                <xs:minInclusive value="0"/>
+                                             </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="ventainmediata">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="cantidad" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:double">
+                                                <xs:minInclusive value="0"/>
+                                             </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="divisa" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="euros"/>
+                                                <xs:enumeration value="dolares"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

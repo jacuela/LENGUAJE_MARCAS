@@ -18,7 +18,7 @@
    <nombre>JFK</nombre>
    <vuelos>
       <vuelo código="V22" estado="R">
-         <diario />
+         <diario/>
          <origen>New York</origen>
          <destino>Chicago</destino>
          <hora-salida>9:30</hora-salida>
