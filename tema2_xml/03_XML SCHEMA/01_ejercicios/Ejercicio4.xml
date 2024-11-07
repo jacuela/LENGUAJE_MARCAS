@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- aqui he usado otro tipo de cabecera para referenciar al xsd -->
+<?xml-model href="Ejercicio4.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<libros_texto>
+    <libro_texto isbn="AX-2024-12" encuadernacion="pasta_dura">
+        <editorial>Anaya</editorial>
+        <titulo>El cuerpo humano</titulo>
+        <hojas>56</hojas>
+    </libro_texto>
+    <libro_texto isbn="SDXZ-2023-156" encuadernacion="digital">
+        <editorial>Planeta</editorial>
+        <titulo>Sistemas Informaticos</titulo>
+    </libro_texto>
+    <libro_texto isbn="SDCZ-2023-156" encuadernacion="pasta_blanda">
+        <editorial>Planeta</editorial>
+        <titulo>Sistemas Informaticos</titulo>
+    </libro_texto>
+</libros_texto>

@@ -18,6 +18,6 @@ xsi:noNamespaceSchemaLocation="Ejercicio3.xsd">
     </cuaderno>
     <boligrafo>
         <precio>0.80</precio>
-        <color>rojo</color>
+        <color>verde</color>
     </boligrafo>
 </inventario>

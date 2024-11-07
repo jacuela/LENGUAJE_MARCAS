@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libros_texto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro_texto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="editorial" type="xs:string"/>
+                            <xs:element name="titulo" type="xs:string"/>
+                            <xs:element name="hojas" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="isbn" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:ID">
+                                    <xs:pattern value="\w{4}-\d{4}-\d{1,}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="encuadernacion">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="pasta_dura"/>
+                                    <xs:enumeration value="pasta_blanda"/>
+                                    <xs:enumeration value="digital"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+            </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
