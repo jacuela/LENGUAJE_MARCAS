@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aeropuerto">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="vuelos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="vuelo" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="diario">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="SI"/>
+                                                <xs:enumeration value="NO"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="origen" type="xs:string"/>
+                                    <xs:element name="destino" type="xs:string"/>
+                                    <xs:element name="hora-salida" type="xs:time"/>
+                                    <xs:element name="hora-llegada" type="xs:time"/>
+                                </xs:sequence>
+                                <xs:attribute name="codigo" type="xs:ID"/>
+                                <xs:attribute name="estado">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="C"/>
+                                            <xs:enumeration value="E"/>
+                                            <xs:enumeration value="R"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="fecha" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
