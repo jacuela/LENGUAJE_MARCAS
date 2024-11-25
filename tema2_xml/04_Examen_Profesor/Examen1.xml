@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Usando el anterior esquema, representa una biblioteca musical -->
+<!DOCTYPE biblioteca_musica [
+    <!ELEMENT biblioteca_musica (album)+>
+    <!ELEMENT album (titulo, autor, año, generos,canciones)>
+        <!ATTLIST album id ID #REQUIRED>
+    <!ELEMENT generos (genero)+>
+    <!ELEMENT canciones (cancion)+>
+    <!ELEMENT cancion (nombre)>
+        <!ATTLIST cancion numero CDATA #REQUIRED>
+    <!ELEMENT titulo     (#PCDATA)>
+    <!ELEMENT autor     (#PCDATA)>
+    <!ELEMENT año     (#PCDATA)>
+    <!ELEMENT genero     (#PCDATA)>
+    <!ELEMENT nombre     (#PCDATA)>
+    
+]>
+<biblioteca_musica>
+    <album id="id1">
+        <titulo>El Madrileño</titulo>
+        <autor>C.Tangana</autor>
+        <año>2021</año>
+        <generos>
+            <genero>pop</genero>
+            <genero>latino</genero>
+        </generos>
+        <canciones>
+            <cancion numero="1">
+                <nombre>Demasiadas Mujeres</nombre>
+            </cancion>
+            <cancion numero="2">
+                <nombre>Tu me dejaste querer</nombre>
+            </cancion>
+            <cancion numero="3">
+                <nombre>Comerte Entera</nombre>
+            </cancion>
+        </canciones>
+     </album>
+     <album id="id2">
+        <titulo>Master of Puppets</titulo>
+        <autor>Metallica</autor>
+        <año>1986</año>
+        <generos>
+            <genero>metal</genero>
+        </generos>
+        <canciones>
+            <cancion numero="2">
+                <nombre>Battery</nombre>
+            </cancion>
+            <cancion numero="2">
+                <nombre>Master of Puppets</nombre>
+            </cancion>
+        </canciones>
+     </album>
+</biblioteca_musica>

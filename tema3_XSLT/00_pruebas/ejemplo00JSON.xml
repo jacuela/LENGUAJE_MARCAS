@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ejemplo00JSON.xsl"?>
+<cd>
+    <title>The Dark Side Of The Moon</title>
+    <artist>Pink FLoyd</artist>
+    <country>England</country>
+    <year>1980</year>
+</cd>

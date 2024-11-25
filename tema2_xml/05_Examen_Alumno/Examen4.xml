@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- aqui he usado otro tipo de cabecera para referenciar al xsd -->
+<?xml-model href="XXXXXXXXXX" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<!--Obligatorio el tener fechaGeneracion-->
+<articulos fechageneracion="2018-03-01">
+    <!--El atributo codigo es optativo siempre-->
+    <monitor>
+        <!-- num serie obligatorio  --> 
+        <numserie>3432d22as324</numserie>
+        <!--Descripcion opcional -->
+        <descripcion>Monitor de x pulgadas...</descripcion>
+        <resolucion>
+            <alto>1400</alto>
+            <ancho>1920</ancho>
+        </resolucion>
+    </monitor>
+    <raton>
+        <!-- num serie obligatorio  --> 
+        <numserie>3432d11as324</numserie>
+        <peso>100</peso>
+    </raton>
+    <teclado>
+        <!-- num serie obligatorio  --> 
+        <numserie>11432d11as324</numserie>
+        <!---Descripcion opcional-->
+    </teclado>
+    <raton>
+        <!-- num serie obligatorio  --> 
+        <numserie>34332da44s324</numserie>
+        <!---Descripcion opcional-->
+        <descripcion>Raton Logitech</descripcion>
+        <peso>150</peso>
+    </raton>
+    <monitor>
+        <!-- num serie obligatorio y único --> 
+        <numserie>3432d4as324</numserie>
+        <resolucion>
+            <ancho>1400</ancho>
+            <alto>1000</alto>
+        </resolucion>
+    </monitor>
+</articulos>
