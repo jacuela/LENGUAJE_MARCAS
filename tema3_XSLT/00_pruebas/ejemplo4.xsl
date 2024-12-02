@@ -6,10 +6,10 @@
   <h2>My CD Collection</h2>
   <table border="1">
     <tr bgcolor="#ff342">
-      <th style="text-align:left">Title</th>
-      <th style="text-align:left">Artist</th>
-      <th style="text-align:left">Country</th>
-      <th style="text-align:left">Year</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Country</th>
+      <th>Year</th>
     </tr>
     <xsl:for-each select="catalog/cd">
     <tr>

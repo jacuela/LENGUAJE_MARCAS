@@ -2,7 +2,7 @@
 <!--
 <?xml-stylesheet type="text/xsl" href="ejemplo5_soloUSA.xsl"?>
 -->
-<?xml-stylesheet type="text/xsl" href="ejemplo5_ordenar_por_year.xsl"?>
+<?xml-stylesheet type="text/xsl" href="ejemplo5_menor10.xsl"?>
 
 <catalog>
   <cd>
