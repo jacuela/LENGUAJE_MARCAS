@@ -4,25 +4,25 @@
 -->
 <?xml-stylesheet type="text/xsl" href="ejemplo6.xsl"?>
 <tienda>
-    <raqueta>
+    <raqueta numserie="1001">
         <marca>Babolat</marca>
         <modelo>Pure Drive</modelo>
         <precio>220</precio>
         <year>2012</year>
     </raqueta>
-    <raqueta>
+    <raqueta numserie="1002">
         <marca>Babolat</marca>
         <modelo>Pure Storm</modelo>
         <precio>160</precio>
         <year>2013</year>
     </raqueta>
-    <raqueta>
+    <raqueta numserie="1003">
         <marca>Wilson</marca>
         <modelo>Hammer</modelo>
         <precio>150</precio>
         <year>2000</year>
     </raqueta>
-    <raqueta>
+    <raqueta numserie="1004">
         <marca>Wilson</marca>
         <modelo>Pro Staff</modelo>
         <precio>215</precio>
