@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="ejemplo5_soloUSA.xsl"?>
 -->
 <?xml-stylesheet type="text/xsl" href="ejemplo6.xsl"?>
-<tienda>
+<tienda localidad="murcia">
     <raqueta numserie="1001">
         <marca>Babolat</marca>
         <modelo>Pure Drive</modelo>

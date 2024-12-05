@@ -4,6 +4,7 @@
     <html>
         <body>
            <h3>TIENDA DE RAQUETAS</h3>
+           <h2>Localidad:<xsl:value-of select="tienda/@localidad"/> </h2>
            <table border="1" style="text-align:center">
             <tr bgcolor="black" style="color:white">
                 <th>NUMSERIE</th>
