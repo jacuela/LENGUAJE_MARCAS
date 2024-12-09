@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio4.xsl" type="text/xsl"?>
+<estudiantes>
+  <estudiante id="101">
+    <nombre>Ana García</nombre>
+    <calificacion>8.5</calificacion>
+  </estudiante>
+  <estudiante id="102">
+    <nombre>Carlos López</nombre>
+    <calificacion>4.4</calificacion>
+  </estudiante>
+  <estudiante id="103">
+    <nombre>Lucía Sánchez</nombre>
+    <calificacion>9.2</calificacion>
+  </estudiante>
+  <estudiante id="104">
+    <nombre>José Martínez</nombre>
+    <calificacion>3.0</calificacion>
+  </estudiante>
+</estudiantes>

@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Usando el anterior esquema, representa una biblioteca musical -->
-<!DOCTYPE empleado [
-    <!ELEMENT empleado (nombre,apellido1,apellido2,dni,direccion,telefonos,emails)>
-        <!ATTLIST empleado codigo ID #REQUIRED>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellido1 (#PCDATA)>
-    <!ELEMENT apellido2 (#PCDATA)>
-    <!ELEMENT dni (#PCDATA)>
-        <!ATTLIST dni tipo (NIF|NIE) #REQUIRED>
-    <!ELEMENT direccion (calle,numero, piso, puerta,cp, poblacion, provincia)>
-    <!ELEMENT calle (#PCDATA)>
-    <!ELEMENT numero (#PCDATA)>
-    <!ELEMENT piso (#PCDATA)>
-    <!ELEMENT puerta  (#PCDATA)>
-    <!ELEMENT cp  (#PCDATA)>
-    <!ELEMENT poblacion  (#PCDATA)>
-    <!ELEMENT provincia  (#PCDATA)>
-    
-    <!ELEMENT telefonos (telefono)+>
-    <!ELEMENT telefono (#PCDATA)>
-        <!ATTLIST telefono principal (SI|NO) #IMPLIED>
-    <!ELEMENT emails (email)+>
-    <!ELEMENT email (#PCDATA)>
-        <!ATTLIST email principal (SI|NO) #IMPLIED>
-    
-]>
+<?xml-stylesheet href="Ejercicio3.xsl" type="text/xsl"?>
+
 <empleado codigo="E1001">
     <nombre>John</nombre>
     <apellido1>Colling</apellido1>
-    <apellido2></apellido2>
+    <apellido2>Martinez</apellido2>
     <dni tipo="NIE">X0124567A</dni>
     <direccion>
         <calle>Lucianos</calle>
         <numero>11</numero>
-        <piso></piso>
-        <puerta></puerta>
-        <cp>30007</cp>
-        <poblacion>Murcia</poblacion>
+        <piso>3</piso>
+        <puerta>B</puerta>
+        <cp>30800</cp>
+        <poblacion>Lorca</poblacion>
         <provincia>Murcia</provincia>
     </direccion>
     <telefonos>
@@ -44,6 +20,9 @@
         <telefono>968121212</telefono>
     </telefonos>
     <emails>
-        <email principal="SI">john@gmail.com</email>
+        <email principal="SI">john.colling@gmail.com</email>
+        <email>superjohn@gmail.com</email>
+        <email>johnny@hotmail.com</email>
+        
     </emails>
 </empleado>
