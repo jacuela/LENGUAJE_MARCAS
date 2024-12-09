@@ -79,29 +79,4 @@
     </html>
     
 </xsl:template>
-
-<xsl:template match="alumno">
-        <p>
-            <table align="center" border="1">
-                <td><b>Nombre</b>
-                    <p><xsl:value-of select="nombre"/></p>
-                </td>
-                <td>
-                    <b>Apellidos</b>
-                    <p><xsl:value-of select="apellidos"/></p>
-                </td>
-                <td><b>Tareas</b>
-                    <p><xsl:value-of select="tareas"/></p>
-                </td>
-                <td><b>Cuestionarios</b>
-                    <p><xsl:value-of select="cuestionarios"/></p>
-                </td>
-                <td><b>Nota Final</b>
-                    <p><xsl:value-of select="final"/></p>
-                </td>
-            </table>
-        </p>
-    </xsl:template>
-
-      
 </xsl:stylesheet>
