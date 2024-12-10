@@ -52,25 +52,27 @@
                     <th>EXAMEN</th>
                     <th>FINAL</th>
                 </tr>
-                <xsl:for-each select="notas/alumno[@convocatoria='Junio']">
-                <tr>
-                    <td><xsl:value-of select="@convocatoria"/></td>
-                    <td><xsl:value-of select="nombre"/></td>
-                    <td><xsl:value-of select="apellidos"/></td>
-                    <td style="text-align: center"><xsl:value-of select="cuestionarios"/></td>
-                    <td style="text-align: center"><xsl:value-of select="tareas"/></td>
-                    <td style="text-align: center"><xsl:value-of select="examen"/></td>
-                    
-                    <xsl:choose>
-                        <xsl:when test="examen>5">
-                            <td bgcolor="#f2fa0a" style="text-align: center"><xsl:value-of select="examen"/></td>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <td bgcolor="#0aa6fa" style="text-align: center"><xsl:value-of select="examen"/></td>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    
-                </tr>
+                <xsl:for-each select="notas/alumno">
+                    <xsl:if test="@convocatoria = 'Junio'">
+                        <tr>
+                            <td><xsl:value-of select="@convocatoria"/></td>
+                            <td><xsl:value-of select="nombre"/></td>
+                            <td><xsl:value-of select="apellidos"/></td>
+                            <td style="text-align: center"><xsl:value-of select="cuestionarios"/></td>
+                            <td style="text-align: center"><xsl:value-of select="tareas"/></td>
+                            <td style="text-align: center"><xsl:value-of select="examen"/></td>
+                            
+                            <xsl:choose>
+                                <xsl:when test="examen>5">
+                                    <td bgcolor="#f2fa0a" style="text-align: center"><xsl:value-of select="examen"/></td>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <td bgcolor="#0aa6fa" style="text-align: center"><xsl:value-of select="examen"/></td>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            
+                        </tr>
+                    </xsl:if>
                 </xsl:for-each>
             </table>
 
