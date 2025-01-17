@@ -5,7 +5,7 @@ html {
 }
   
 body {
-      /* width: 600px; */
+      margin:0;
       text-align: center;
       background-color: orange;     
 }
@@ -24,12 +24,12 @@ footer{
     padding-bottom: 20px;
 }
 
-/*
+
 main{
-    max-width: 80%;
+    width: 800;
     margin:auto;    
 }
-*/
+
 
 article{
     background-color: white;
