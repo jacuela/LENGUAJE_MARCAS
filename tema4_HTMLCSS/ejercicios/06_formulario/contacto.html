@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Ejercicicio3</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>FLORI<span style="color:red">NEWS</span></h1>
+        <nav>
+            <a href="index.html">Principal</a> |
+            <a href="deportes.html">Deportes</a> |
+            <a href="contacto.html">Contacto</a> 
+        </nav>
+    </header>
+    <main>
+            <article>
+                <h2>CONTACTO</h2>
+                <p>Me llamo Juan Antonio Cuello y actualmente estoy estudiando el Ciclo de <abbr title="Desarrollo de Aplicaicones Web">DAW</abbr></p>
+                <p>Puedes contactar conmingo en el mail <b>juancuello@kk.com</b></p>
+                <p>Estudio en el <a href="http://www.iesfloridablanca.es" target="_blank">IES Floridablanca</a></p>
+            </article>
+            <article>
+                <h2>Formulario de contacto</h2>
+                <form name="formulario" method="get" action="procesar.php">
+                    <p>Nombre: <input type="text" name="nombre" required></p>
+                    <p>e-mail: <input type="email" name="email" required></p>
+                    <p>Edad: <input type="number" name="edad" min="1"></p>
+                   
+                    <textarea name="motivo" rows="5" cols="30" maxlength="100" 
+                        placeholder="Indica el motivo del contacto" style="resize: none;"></textarea>
+                    <p><input type="submit" value="Enviar datos"></p>
+              </form>
+         <!--
+              <form action="/submit" method="POST">
+                <!-- Campo para el nombre -->
+        <!--        <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+        -->    
+        <!--        <!-- Campo para la edad -->
+        <!--        <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="1" required>
+                <br><br>
+            
+                <button type="submit">Enviar</button>
+              </form>
+            -->
+
+
+            </article>
+    </main>
+    <footer>
+        <p>Creado por Juan Antonio Cuello</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+    </footer> 
+</body>
+</html>
+
