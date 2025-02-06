@@ -23,7 +23,7 @@
                 <p>Estudio en el <a href="http://www.iesfloridablanca.es" target="_blank">IES Floridablanca</a></p>
             </article>
             <article>
-                <h2>Formulario de contacto</h2>
+                <h2>Formulario de contacto (html simple)</h2>
                 <form name="formulario" method="get" action="procesar.php">
                     <p>Nombre: <input type="text" name="nombre" required></p>
                     <p>e-mail: <input type="email" name="email" required></p>
@@ -33,24 +33,34 @@
                         placeholder="Indica el motivo del contacto" style="resize: none;"></textarea>
                     <p><input type="submit" value="Enviar datos"></p>
               </form>
-         <!--
-              <form action="/submit" method="POST">
-                <!-- Campo para el nombre -->
-        <!--        <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-        -->    
-        <!--        <!-- Campo para la edad -->
-        <!--        <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" min="1" required>
-                <br><br>
-            
-                <button type="submit">Enviar</button>
-              </form>
-            -->
+            </article>  
+            <article>
+                <h2>Formulario de contacto (html con semántica)</h2>
+                <form name="formulario" action="procesar.php" method="get">
+                    <!-- Campo para el nombre -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    
+                    <!-- Campo para el email -->
+                    <label for="email">e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+               
+                    <!-- Campo para la edad -->
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1">
+                    <br><br>
+                
+                    <!-- Campo motivo-->
+                    <textarea name="motivo" rows="5" cols="30" maxlength="100" 
+                    placeholder="Indica el motivo del contacto" style="resize: none;"></textarea>
+                    <br><br>
 
-
-            </article>
+                    <button type="submit">Enviar datos</button>
+                  </form>
+            </article>  
+              
     </main>
     <footer>
         <p>Creado por Juan Antonio Cuello</p>
