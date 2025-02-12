@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio - Box model</title>
+    <meta charset="utf-8">
+    <meta name="description" content="CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <link rel="stylesheet" href="misestilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 3 - BoxModel</h1>
+        <p>Este header tiene un borde inferior de tipo "20px dashed white"</p>
+    </header>
+
+    <main>
+
+        <p class="fondo_amarillo_claro">Por defecto los parrafos tienen un margin superior e inferior de 1em y tienen un
+            "padding:0px". Esto es un párrafo aislado. </p>
+
+        
+
+
+        <div class="caja1">
+            <p class="sinmargen">Primer parrafo (le he dado margen:0px) </p>
+            <p class="sinmargen">Segundo parrafo (le he dado margen:0px)</p>
+        </div>
+
+        <div class="caja2">
+            <p>Esta caja gris tiene un padding de 20px.</p>
+            <p>Además, tiene un margen superior e inferior de 20px para separarla de los elementos anteriores y
+                posteriores. </p>
+        </div>
+
+
+        <div class="caja3">
+            <p>Esta caja tiene 80% de ancho, y un margen superior e inferior de 20px.</p>
+            <p>Un truco para centrarla es añadir "margin:auto". Pero ojo, si quieres usar "margin:auto" con otros
+                margenes, esta propiedad de "auto" debe de estar antes.</p>
+        </div>
+
+        
+
+        <div class="caja4">
+            <p>Esta caja tiene un ancho de 700px fijo y un padding de 15px.
+            </p>
+            <p>Darle un ancho en pixeles fijo no es buena idea poque al hacer la ventana de menos de 700px, aparece la
+                MALDITA BARRA HORIZONTAL.</p>
+        </div>
+
+        <p>A continuación, mostraré tres cajas en linea. Por defecto, el elemento DIV es de bloque y ocupa todo el
+            ancho.
+            Hay que evitarlo especificando a cada caja <b>display:inline</b>.Cada caja tiene un padding de 50px y les he
+            dado margenes de izquieda y derecha,
+            según necesidad. Las cajas estan encerradas en un contenedor padre para poder aplicar margen.
+        </p>
+        <div class="contenedor">
+            <div class="cajaA">CajaA</div>
+            <div class="cajaB">CajaB</div>
+            <div class="cajaC">CajaC</div>
+        </div>
+
+
+    </main>
+    <footer>
+        &copy; Derechos Reservados 2021
+    </footer>
+
+</body>
+
+</html>

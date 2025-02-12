@@ -1,0 +1,115 @@
+
+
+html {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+header{
+    background-color: blue;
+    color:white;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 20px dashed white; 
+}
+
+footer{
+    background-color: black;
+    color:white;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 20px dashed white; 
+
+}
+
+main{
+    margin-left:100px;
+    margin-right: 100px;
+    
+}
+
+
+.fondo_amarillo_claro{
+    background-color: lightyellow;
+}
+
+.sinmargen{
+     margin: 0px;
+ }
+.caja1{
+    background-color: mistyrose;
+    box-shadow: 0px 0px 5px 2px grey;
+    padding: 10px;
+ }
+
+.caja2{
+    background-color: lightgray;
+    border-left: 6px solid red;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caja3{
+    width: 80%;
+    border: 3px solid red;
+    margin: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.caja4{
+    background-color: greenyellow;
+    border-radius: 30px;
+    padding: 15px;
+    /*width: 700px;*/
+    margin: auto;   
+}
+
+
+div.contenedor{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.cajaA{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: burlywood;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+    
+}
+.cajaB{
+    padding: 50px;
+    background-color: darkviolet;
+    color:white;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+.cajaC{
+    padding: 50px;
+    background-color: coral;
+    color:white;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+
