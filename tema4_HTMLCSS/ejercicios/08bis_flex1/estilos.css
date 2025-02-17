@@ -1,0 +1,68 @@
+
+body{
+    margin: 0px;
+    background-color: blue;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: lightblue;
+}
+
+.flex-container{
+    display: flex;    
+    width: 90%;
+    gap:40px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+.columna{
+    flex:1;
+    
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.flex-container-bandera{
+    display: flex;    
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+
+.columna-bandera{
+    flex:1;
+    background-color: white;
+    padding: 20px;  
+}
+.columna-bandera2{
+    flex:2;
+    background-color: white;
+    padding: 20px;  
+}
+
+
+
+.rojo{
+    background-color: red;  
+}
+.amarillo{
+    background-color: yellow;
+}
