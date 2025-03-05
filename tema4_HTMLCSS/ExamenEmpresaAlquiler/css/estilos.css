@@ -1,0 +1,254 @@
+html { 
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+  
+body {
+      margin:0px;
+}
+
+
+main{
+    max-width: 700px;
+    margin:auto;    
+}
+
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color:white;
+}
+
+nav a:hover{
+    color:red;
+}
+
+button a {
+    color:white;
+}
+
+button a:hover{
+    color:red;
+}
+
+header h1{
+    margin-top: 0px;
+}
+
+h2,h3,h4{
+    text-align: center;
+}
+
+h4{
+    margin-bottom: 0px;
+}
+
+.titulo_grande{
+    font-size: 50px;;
+}
+
+.texto-portada{
+    font-size: 20px;
+}
+.texto-justificado{
+    text-align: justify;
+}
+
+.condiciones{
+    border: 4px dotted red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+/*para que la lista salga al completo
+  cenrtada, con las viñetas, la encierro en 
+  un contenedor <div> con estas propiedades*/
+.lista_centrada{
+    display: flex;
+    justify-content:center;  
+}
+
+.aclaracion{
+    color:violet;  
+}
+.aclaracion a{
+    color: red;
+    border-bottom: 2px dotted red;
+
+
+    
+}
+
+.fondo-beige{
+    background-color: beige;
+}
+
+
+
+header{
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration:none;
+}
+
+
+
+main ul li{
+    list-style: square;
+}
+
+button {
+    background-color: green;
+    color:white;
+    border: none;
+    font-size: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+
+}
+
+
+/* ============FLEX================*/
+
+.row{
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;   
+}
+
+
+.column{
+    flex:1;
+    text-align: center;
+}
+
+.double-column{
+    flex:2;
+    
+
+}
+
+
+
+
+/*  ========================= */
+/*  ==== formulario ===== */
+
+
+.alta-cliente input {
+    width: 100%;
+    margin-bottom: 10px;   
+}
+
+.ancho-100-porciento {
+    width: 100%;
+    margin-bottom: 10px;   
+}
+
+.tipo-combustible{
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+}
+
+
+form button {
+    background-color: red;
+    color:white;
+    border: none;
+    font-size: 25px;
+    border-radius: 6px;
+
+}
+
+
+.centrado{
+    text-align: center;
+}
+
+
+div.fondo-formulario{
+    background-color: beige;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+
+/*  ========================= */
+/*  ==== tabla ===== */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+tfoot {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tfoot td {
+    padding: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: royalblue;
+    transition: 0.3s;
+}

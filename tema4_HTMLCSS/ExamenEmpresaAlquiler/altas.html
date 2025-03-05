@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>FLORI: Alquiler Vehiculos</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" width="50" alt="logo"></a>
+        <h1>Alquiler de Vehiculos Floridablanca</h1>
+    </header>
+    <nav>
+        <a href="listado.html">Listado</a>
+        |
+        <a href="altas.html">Altas</a>
+    </nav>
+    <main>
+        <div class="fondo-formulario">
+            <form class="alta-cliente" action="procesar.php">
+                <h2>Alta de nuevos clientes</h2>
+                <p class="centrado">Los datos con * son obligatorios</p>
+                <label for="nombre">Nombre y Apellidos *</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="dni">DNI *</label>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]"
+                    placeholder="8 digitos seguido de mayuscula" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="telefono">Telefono *</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder="9 dígitos, empieza por 6"
+                    pattern="6[0-9]{8}" required>
+
+                <div class="centrado">
+                    <button type="submit">Nuevo Cliente</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="fondo-formulario">
+            <form action="procesar.php">
+                <h2>Alta de nuevos vehículos</h2>
+                <p class="centrado">Los datos con * son obligatorios</p>
+
+                <label for="tipo">Tipo vehiculo</label>
+                <input class="ancho-100-porciento" type="text" id="tipo" name="tipo" value="Turismo" disabled>
+
+                <label for="matricula">Matricula *</label>
+                <input class="ancho-100-porciento" type="text" id="matricula" name="matricula" pattern="[0-9]{4}-[A-Z]{3}" placeholder="DDDD-AAA"
+                    maxlength="8">
+
+                <!-- vamos a crear un contenedor flex con dos columnas-->
+                <div class="row">
+                    <div class="column">
+                        <select id="marca2" name="marca2" required>
+                            <option selected disabled>Selecciona una marca *</option>
+                            <option>Volvo</option>
+                            <option>Seat</option>
+                            <option>Mercedes-Benz</option>
+                            <option>KIA</option>
+                        </select>   
+                                
+                    </div>
+                    <div class="double-column">
+                        <label for="modelo">Modelo *</label>
+                        <input  type="text" id="modelo" name="modelo" placeholder="máximo 40 caracteres" maxlength="40" size="40" required>
+                    </div>
+                </div>   
+                <!-- fin del flex-->
+                
+               
+                <div class="tipo-combustible">    
+                <p>Tipo combustible</p>
+                <input type="radio" id="diesel" name="combustible" value="diesel">
+                <label for="diesel">diesel</label>
+                <input type="radio" id="gasolina" name="combustible" value="gasolina"  checked>
+                <label for="gasolina">gasolina</label>
+                <input type="radio" id="electrico" name="combustible" value="electrico">
+                <label for="electrico">electrico</label>
+                </div>    
+
+
+                <div class="centrado">
+                    <button type="submit">Nuevo Vehiculo</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>Creado por Juan Antonio Cuello</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+        <p class="aclaracion">Elaborado a partir de la web <a href="https://www.km77.com" target="_blank">km77.com</a>. Datos del 18 de
+            febrero de 2025</p>
+            
+    </footer>
+
+</body>
+
+</html>

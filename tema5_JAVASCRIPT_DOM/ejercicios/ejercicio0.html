@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <!--
+    <script>
+        let fecha=Date();
+        console.log("Fecha de hoy:",fecha);
+    </script>
+    -->
+    <script src="script0.js"></script>
+    
+</head>
+<body>
+    <h1>Web de Pruebas</h1>
+
+    <p id="salida"></p>
+    
+    <!--MUESTRO DATOS -->
+    <p>
+        <script>
+         document.write("Hola mundo 1"); //en la pagina
+         //console.log("Hola mundo 2");  //en la consola
+        </script>
+    </p>
+   
+    <!--MUESTRO DATOS USANDO DOM-->
+    <p id="saludo"></p>
+    <script>
+    document.getElementById("saludo").innerHTML = "Hola JAVASCRIPT";
+    </script>
+   
+
+   <!-- OBJETOS -->
+   <script>
+        // Create an Object
+        const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+        };
+
+    // Stringify Object
+    let personString = JSON.stringify(person);
+    document.write(personString);    
+    //console.log(personString);
+   </script>
+
+    <!-- eventos-->
+    <h3>Eventos</h3>
+    <p onmouseover="decirAdios()" onmouseleave="decirHola()" id="hola">Hola</p>
+
+    <script>
+        function decirAdios(){
+            document.getElementById("hola").innerText="Adios";
+        }
+        function decirHola(){
+            document.getElementById("hola").innerText="Hola";
+        }
+    </script>
+
+   
+
+
+
+</body>
+</html>
