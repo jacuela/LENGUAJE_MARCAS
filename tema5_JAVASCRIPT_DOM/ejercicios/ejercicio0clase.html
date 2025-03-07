@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //console.log("Hola");
+        //let fecha=Date();
+        //console.log("Fecha de hoy:",fecha);
+        //document.write("hola");
+    </script>
+
+    <style>
+        body{
+            padding: 50px;
+            background-color: gray;
+            color:white;
+        }
+
+    </style>
+    <!--
+    <script src="script0clase.js"></script>
+    -->
+
+</head>
+<body>
+    <h1>Web de Pruebas</h1>
+
+    <p>Antes del saludo</p>
+    <p id="saludo"></p>
+    <p>Despues</p>
+    <!--MUESTRO DATOS USANDO DOM-->
+    <script>
+        document.getElementById("saludo").innerHTML= "Hola JAVASCRIPT";
+    </script>
+
+    <!-- eventos-->
+    <h3>Eventos</h3>
+    <h1 onmouseover="decirAdios()" onmouseleave="decirHola()" id="hola">Hola</h1>
+
+    <script>
+        function decirAdios(){
+            document.getElementById("hola").innerText="Adios";
+            document.getElementById("hola").style.color="navy";
+        }
+        function decirHola(){
+            document.getElementById("hola").innerText="Hola";
+            document.getElementById("hola").style.color="yellow";
+        }
+    </script>
+
+   
+
+
+</body>
+</html>
