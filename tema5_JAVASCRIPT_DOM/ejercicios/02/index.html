@@ -12,6 +12,7 @@
         <h2>Conversor Celsius/Farenheit y fechaNac</h2>
     </header>
     <main>
+        <h3>Conversor</h3>
         <p>
             <label for="celsius">Grados Celsius</label>
             <input type="text" id="celsius" name="celsius" placeholder="ºC"
@@ -20,6 +21,14 @@
         <p>
             <label for="farenheit">Grados Farenheit</label>
             <input type="text" id="farenheit" name="farenheit" placeholder="ºF">
+        </p>
+        <hr>
+        <h3>Cálculo de edad</h3>
+        <p>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha"  name="fecha" oninput="calcularEdad()">
+
+            <p id="edad">Tu edad es:</p>
         </p>
     </main>
     <footer>
