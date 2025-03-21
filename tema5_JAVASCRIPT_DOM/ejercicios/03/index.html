@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio03</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h2>Personalizar Texto</h2>
+            <!-- Creo fila con dos columnas-->
+            <div class="filaFlex">
+                <div class="columnaFlex">
+                    <label for="colorTexto">Color texto:</label>
+                    <select id="colorTexto" onchange="cambiarEstilo()">
+                        <option value="black">Negro</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="violet">Violeta</option>
+                        <option value="blue">Azul</option>
+                    </select>
+                </div>
+                <div class="columnaFlex">
+                    <label for="colorFondo">Color fondo:</label>
+                    <select id="colorFondo" onchange="cambiarEstilo()">
+                        <option value="white">Blanco</option>
+                        <option value="black">Negro</option>
+                        <option value="violet">Violeta</option>
+                        <option value="blue">Azul</option>
+                    </select>
+                </div>
+            </div>
+            <!-- fin fila -->
+            <label for="tamaño">Tamaño de letra(px)</label>
+            <input type="number" id="tamaño" value="16" min="10" max="40"
+            onchange="cambiarEstilo()"> 
+
+            <!-- Creo fila con dos columnas para los CHEKBOX-->
+            <div class="filaFlex">
+                <div class="columnaFlex">
+                    <input type="checkbox" id="negrita" onchange="cambiarEstilo()"> 
+                    <label for="negrita">Negrita</label>
+                </div>
+                <div class="columnaFlex">
+                    <input type="checkbox" id="cursiva" onchange="cambiarEstilo()"> 
+                    <label for="cursiva">Cursiva</label>
+                </div>
+            </div>
+            <!-- fin fila -->
+
+            <div id="texto">Texto de ejemplo</div>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>Creado por Juan Antonio Cuello</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+    </footer>
+
+    <script>
+        function cambiarEstilo(){
+            const texto = document.getElementById("texto");
+
+            const colorTexto = document.getElementById("colorTexto").value;
+            const colorFondo = document.getElementById("colorFondo").value;
+            const tamaño = document.getElementById("tamaño").value + "px";
+            const negrita = document.getElementById("negrita").checked ? "bold" : "normal";
+            const cursiva = document.getElementById("cursiva").checked ? "italic" : "normal";
+          
+            /*
+            // USANDO IF ELSE EN LUGAR DE OPERADOR TERNARIO
+            const cursivaONOFF = document.getElementById("cursiva").checked;
+            let cursiva;
+            if (cursivaONOFF == true){
+                 cursiva = "italic";
+            }
+            else{
+                cursiva = "normal";
+            }
+            */    
+
+            texto.style.color = colorTexto;
+            texto.style.backgroundColor = colorFondo;
+            texto.style.fontSize = tamaño;
+            texto.style.fontWeight = negrita;
+            texto.style.fontStyle = cursiva;                
+
+        }
+    </script>
+
+</body>
+</html>
