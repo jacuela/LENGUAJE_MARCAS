@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio04</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main >
+        <button id="modoOscuroBtn">
+            Modo Oscuro 🌙
+        </button>
+
+        <p class="texto">Haz click en este párrafo para resaltarlo</p>
+        <p class="texto">Puedes hacer lo mismo con este</p>
+        <p class="texto">Y con este también puedes. Con todos.</p>
+        <p class="texto">MEJORA1: volver a hacer click para quitar resaltado</p>
+        <p class="texto">MEJORA2: Cambiar colores resaltado en modo oscuro</p>
+    </main>
+    <footer>
+        <p>Creado por Juan Antonio Cuello</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+    </footer>
+
+    <script>
+
+        //Capturamos el click del boton
+        document.getElementById("modoOscuroBtn").addEventListener("click",
+            function(){
+                //Para el <body>, alterno entre modo oscuro 
+                document.body.classList.toggle("dark-mode");
+                const boton=document.getElementById("modoOscuroBtn");
+                
+                //IF--ELSE para saber si estoy en modo oscuro o modo claro
+                if (document.body.classList.contains("dark-mode")){
+                    //estoy en modo oscuro
+                    boton.innerHTML="Modo Claro ☀️";
+                }
+                else{
+                    //estoy en modo claro
+                    boton.innerHTML = "Modo Oscuro 🌙";
+
+                }
+
+                //MEJORA2 mejorada
+                //Ademas, al pulsar el boton, limpio estilo y quito los resaltados
+                //Resaltar párrafos al hacer click
+                // document.querySelectorAll(".texto").forEach(parrafo => {
+                //     parrafo.classList.remove("highlight-oscuro");
+                //     parrafo.classList.remove("highlight-claro");
+                // });    
+
+                //MEJORA3
+                //Ademas, al pulsar el boton, NO LIMPIO, cambio el tipo de resaltado
+                document.querySelectorAll(".texto").forEach(parrafo => {
+                    if (parrafo.classList.contains("highlight-oscuro")){
+                        parrafo.classList.remove("highlight-oscuro");
+                        parrafo.classList.add("highlight-claro");
+                    }
+                    else if (parrafo.classList.contains("highlight-claro")){
+                        parrafo.classList.remove("highlight-claro");
+                        parrafo.classList.add("highlight-oscuro");
+                    }    
+                   
+                });  
+
+
+
+
+
+
+                
+            } //fin function anonima click del boton
+
+        );
+
+        //Resaltar párrafos al hacer click
+        document.querySelectorAll(".texto").forEach(parrafo => {
+            parrafo.addEventListener("click", function(){
+            
+
+                //MEJORA2
+                //Me definos 2 clases de resaltado, highlight-claro
+                //y highlight-oscuro.
+
+                //SI estoy en modo claro, aplico la clase highlight-claro
+                //SINO, aplica la clase highlight-oscuro
+                if (document.body.classList.contains("dark-mode")){
+                    this.classList.toggle("highlight-oscuro");
+                }
+                else{
+                    this.classList.toggle("highlight-claro");
+                }
+
+
+                
+            })    
+        });
+
+
+    </script>
+
+</body>
+</html>

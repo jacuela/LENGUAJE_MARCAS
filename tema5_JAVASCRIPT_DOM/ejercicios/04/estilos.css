@@ -1,0 +1,42 @@
+
+body{
+    margin:0px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;   
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.dark-mode{
+    background-color: #222;
+    color: white;
+   
+}
+
+.highlight-claro{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.highlight-oscuro{
+    background-color: violet;
+    font-weight: bold;
+}
