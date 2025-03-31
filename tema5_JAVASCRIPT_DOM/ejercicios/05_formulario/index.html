@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio05 - formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <h2>Formulario <span class="color-violeta">TIPO1</span></h2>
+            <form id="formulario" method="post" action="backend.php">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <div class="error" id="errorNombre">El nombre es obligatorio</div>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="1" max="100"
+                        placeholder="entre 1 y 100">
+                <div class="error" id="errorEdad">La edad debe estar entre 1 y 100</div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"> 
+                <div class="error" id="errorEmail">Introduce un email válido</div>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                        placeholder="sin espacios y mínimo 6 caracteres">
+                <div class="error" id="errorPasswordEspacios">No puede haber espacios</div>
+                <div class="error" id="errorPasswordMinCaracteres">Mínimo de 6 caracteres</div>
+           
+                <button type="submit">Enviar</button>
+            
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Creado por Juan Antonio Cuello</p>
+        <p>IES Floridablanca - Ciclo de DAW</p>
+    </footer>
+    <script src="validarFormulario.js"></script>
+    
+</body>
+</html>
