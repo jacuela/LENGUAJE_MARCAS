@@ -40,8 +40,30 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         document.getElementById("errorEmail").style.display = "none";
     }
 
-    
+    // Validar Password
+    let password = document.getElementById("password").value;
+    console.log("PASS:",password);
 
+    if (password.includes(" ")) {
+        document.getElementById("errorPasswordEspacios").style.display = "block";
+        valido = false;
+    } else {
+        document.getElementById("errorPasswordEspacios").style.display = "none";
+    }
+    
+    if (password.length < 6){
+        document.getElementById("errorPasswordMinCaracteres").style.display = "block";
+        valido = false;
+    } else {
+        document.getElementById("errorPasswordMinCaracteres").style.display = "none";
+    }
+
+    console.log("VALIDO:",valido);
+    if (valido){
+        document.getElementById("formulario").submit();
+        // document.getElementById("exitoMsg").style.display = "block";
+        // document.getElementById("formulario").reset();
+    }
 
 });
 
