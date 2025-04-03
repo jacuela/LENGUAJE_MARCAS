@@ -3,7 +3,7 @@
 ## Sobre los sistemas de gestión empresarial:
 
 - ¿Qué es un ERP?
-- Pon dos ejemnplos de ERP que se usen en la actualidad
+- Pon dos ejemplos de ERP que se usen en la actualidad
 - ¿Para qué sirve PowerBI?
 
 
