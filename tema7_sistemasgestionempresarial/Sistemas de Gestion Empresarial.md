@@ -1,6 +1,6 @@
 # Sistemas de Gestión Empresarial y datos XML
 
-## Sobre los sistemas de gestión empresaial:
+## Sobre los sistemas de gestión empresarial:
 
 - ¿Qué es un ERP?
 - Pon dos ejemnplos de ERP que se usen en la actualidad
