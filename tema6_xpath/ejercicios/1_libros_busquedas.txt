@@ -1,0 +1,4 @@
+Titulo de los libros de genero fantasia
+
+//libro[@genero="fantasía"]/titulo
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros biblioteca="Central">
+    <libro id="001" genero="novela" precio="19.99">
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <anio_publicacion>1967</anio_publicacion>
+        <editorial>RaMa</editorial>
+    </libro>
+
+    <libro id="002" genero="ciencia ficción" precio="14.50">
+        <titulo>Dune</titulo>
+        <autor>Frank Herbert</autor>
+        <anio_publicacion>1965</anio_publicacion>
+        <editorial>Planeta</editorial>
+    </libro>
+
+    <libro id="003" genero="fantasía" precio="22.00">
+        <titulo>El nombre del viento</titulo>
+        <autor>Patrick Rothfuss</autor>
+        <anio_publicacion>2007</anio_publicacion>
+        <editorial>Agostini</editorial>
+    </libro>
+
+    <libro id="004" genero="misterio" precio="18.75">
+        <titulo>El código Da Vinci</titulo>
+        <autor>Dan Brown</autor>
+        <anio_publicacion>2003</anio_publicacion>
+        <editorial>Planeta</editorial>
+    </libro>
+    <libro id="005" genero="fantasía" precio="24.00">
+        <titulo>La historia interninable</titulo>
+        <autor>Alicia Basket</autor>
+        <anio_publicacion>2025</anio_publicacion>
+        <editorial>Alfagüara</editorial>
+    </libro>
+</libros>
