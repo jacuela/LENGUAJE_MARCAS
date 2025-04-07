@@ -1,4 +1,105 @@
-Titulo de los libros de genero fantasia
+Todos los libros
+//libro
+/libros/libro
 
+Todos los titulos
+//titulo
+/libros/libro/titulo
+
+El segundo libro
+//libro[2]
+/libros/libro[2]
+
+El último libro
+//libro[last()]
+/libros/libro[last()]
+
+Autor del tercer libro
+//libro[3]/autor
+/libros/libro[3]/autor
+
+Libros publicados despues del año 2000
+//libro[anio_publicacion>2000]
+/libros/libro[anio_publicacion>2000]
+
+Titulo de los libros despues del año 2000
+//libro[anio_publicacion>2000]/titulo
+/libros/libro[anio_publicacion>2000]/titulo
+
+Libro del año 2007
+/libros/libro[anio_publicacion=2007]
+
+Nombre de la biblioteca
+/libros/@biblioteca
+//@biblioteca
+
+Todos los generos
+//@genero
+/libros/libro/@genero
+
+El genero del primer libro
+/libros/libro[1]/@genero
+//libro[1]/@genero
+
+Libros que valgan mas de 20€
+//libro[@precio>20]
+
+Titulo de los Libros que valgan mas de 20€
+//libro[@precio>20]/titulo
+
+Autores de libros de fantasía
+//libro[@genero='fantasía']/autor
+
+Lista de precios
+//@precio
+
+Lista de precios superiores a 20€
+//@precio[.>20]
+//libro[@precio>20]/@precio
+
+ALGUNA CONDICION DOBLE
+Libros de fantasia o novela
+//libro[@genero='fantasía' or @genero='novela']/titulo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Titulo de los libros de genero fantasia
 //libro[@genero="fantasía"]/titulo
 
