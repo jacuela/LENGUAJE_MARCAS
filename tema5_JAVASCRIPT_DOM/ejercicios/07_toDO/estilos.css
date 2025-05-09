@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: bisque;
+}
+
+main{
+    margin: 50px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+.contenedor{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+ }
+
+ .completada{
+    text-decoration: line-through;
+    color: gray;
+ }
