@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio10</title>
+    <style>
+
+    </style>
+</head>
+<body>
+     <h2>Control select</h2>  
+     
+     <select id="control" onchange="opcionElegida()"></select>
+     <p>Opcion elegida: <span id="opcion-elegida"></span></p>
+
+     <script>
+        const frutas = ["Manzana","Pera","Fresa"];
+
+        const selectELEMENTO = document.getElementById("control");
+
+        //Relleno el select
+        for (const fruta of frutas) {
+            const nuevaOpcion = document.createElement("option");
+            nuevaOpcion.textContent = fruta;
+            selectELEMENTO.appendChild(nuevaOpcion);
+
+        }
+
+        //Esta funcion se ejecuta en el evento onchange
+        function opcionElegida(){
+            document.getElementById("opcion-elegida").textContent = selectELEMENTO.value;
+        }
+
+
+
+     </script>
+
+</body>
+</html>
