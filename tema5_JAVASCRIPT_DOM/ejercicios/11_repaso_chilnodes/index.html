@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_repaso</title>
+    <style>
+        .poner-amarillo{
+            background-color: yellow;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <ul id="lista">
+    </ul>
+   
+    <button onclick="cambiarLista()">Sumar 10</button>    
+    
+<script>
+
+    const numeros = [1,2,3,4,5];
+
+    //Creo la lista dinamicamente
+    const listaUL = document.getElementById("lista");
+    for (const num of numeros) {
+        const nuevoLI = document.createElement("li");
+        //Le meto al LI el evento del click
+        nuevoLI.onclick = () => {
+            nuevoLI.classList.toggle("poner-amarillo")
+        };
+
+
+        nuevoLI.textContent = num;
+        listaUL.appendChild(nuevoLI);
+        
+    }
+
+    
+    function cambiarLista(){
+        const listaUL = document.getElementById("lista");
+
+        //console.log(listaUL);
+        const hijosUL = listaUL.children;
+        console.log("total Hijos de UL:"+hijosUL.length);
+        for (let i=0; i < hijosUL.length;i++){
+            console.log(hijosUL[i]);
+            let valor = hijosUL[i].textContent;
+            valor = parseInt(valor) + 10;
+            hijosUL[i].textContent = valor;
+        }
+
+
+
+    }
+    function ponerAmarillo(e){
+        console.log("hago click en li");
+        
+    }
+
+
+
+</script>    
+</body>
+</html>
