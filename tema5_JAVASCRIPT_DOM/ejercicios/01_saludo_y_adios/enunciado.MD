@@ -5,10 +5,13 @@ Crea un formulario para introducir tu nombre y un botón que al pulsarlo, muestr
 
 Añade un segundo botón que diga "Adios NOMBRE". Esta vez, usa un *listener* para añadir el evento al botón. 
 
-Crea al principio dos botones para elegir entre modo claro y modo oscuro de la página. Para ello, aplica el estilo correspondiente al body.
+OPCIONAL: Crea al principio dos botones para elegir entre modo claro y modo oscuro de la página. Para ello, aplica el estilo correspondiente al body.
 
 ### Indicaciones
 - El archivo principal será index.html
 - Usa estilos en una archivo separado
 - Los script, antes de cerrar el `</body>` y en un archivo aparte `ejercicio01.js`
+
+<img src="captura1.png" width="300">
+<img src="captura2.png" width="300">
 

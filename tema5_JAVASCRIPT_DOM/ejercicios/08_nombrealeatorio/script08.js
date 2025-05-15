@@ -27,7 +27,7 @@ function seleccionAleatoria(){
     
     else{
 
-        //==========Voy a quitar el amarillo ===========================
+        //==========Voy a quitar el amarillo (mejora) ===========================
         let children = listaNombresUL.childNodes;
 
         for (var i = 0; i < children.length; i++) {
