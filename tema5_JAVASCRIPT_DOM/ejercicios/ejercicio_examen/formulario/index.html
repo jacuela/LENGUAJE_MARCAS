@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <p>Autor: Juan Antonio Cuello</p>
+    </header>
+    <main>
+       
+        <div class="contenedor">
+            <h2>Alta de usuario</h2>
+            <form id="formulario" method="post" action="backend.php" noValidate>
+                
+                <!--  NOMBRE -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <div class="error" id="errorNombre"></div>
+
+                <!--  PASSWORD -->
+                <label for="password1">Password:</label>
+                <input type="password" id="password1" name="password1"
+                        placeholder="sin espacios y mínimo 4 caracteres">
+                <span class="span-boton" id="span-boton-1" onclick="verPassword1()">ver</span>        
+                <div class="error" id="errorPassword1"></div>
+                
+                <!--  REPITE PASSWORD -->
+                <label for="password2">Repite Password:</label>
+                <input type="password" id="password2" name="password2"
+                        placeholder="repite password">
+                <span class="span-boton" id="span-boton-2" onclick="verPassword2()">ver</span> 
+                <div class="error" id="errorPassword2"></div>
+                
+
+                <button class="boton-general" type="submit">Enviar</button>
+            
+            </form>
+            <br><br>
+            <hr>
+            <p>USUARIOS: <span id="lista-usuarios"></span></p>
+
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

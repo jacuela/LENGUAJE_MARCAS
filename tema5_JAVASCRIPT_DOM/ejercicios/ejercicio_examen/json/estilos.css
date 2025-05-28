@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 10px;
+    
+}
+
+h2,h3{
+    text-align: center;
+}
+
+.tarjeta-empleado{
+    
+    margin: auto;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: beige;
+    margin-bottom: 10px;
+}
+
+.tarjeta-empleado p{
+    text-align: center;
+    margin: 0px;
+    
+}
+.tarjeta-empleado ul{
+    margin: 0px;
+    
+}
+
+
+

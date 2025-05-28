@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - desplegable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <p>Autor: Juan Antonio Cuello</p>
+    </header>
+    <main>
+        <select id="desplegable" onchange="cambioColor()">
+            <option disabled selected>Elige color</option>
+            <option>Texto a Violeta</option>
+            <option>Texto a Azul</option>
+            <option>Texto a Naranja</option>
+        </select>
+    
+        <div id="parrafos">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    
+        <button onclick="resetColor()">Resetear</button>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
